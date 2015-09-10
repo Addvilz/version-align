@@ -8,6 +8,14 @@ Align versions across package manifests determining the largest version from all
 
 `npm install -g version-align`
 
+### Supported manifests
+
+- NPM: package.json
+- Bower: bower.json
+- Composer: composer.json
+
+*NB: you probably have a manifest format you want to see in this list - please, suggest those in the issues, or if you feel generous - open a pull request! :)*
+
 ### Usage
 
 In the directory where your package manifests are located, run following commandline:
@@ -23,12 +31,6 @@ Found largest version - 2.3.0-alpha, updating manifests...
 Skipping bower, same version
 Done, kthxbye!
 ```
-
-### Supported manifests
-
-- NPM: package.json
-- Bower: bower.json
-- Composer: composer.json
 
 ### Todo
 
