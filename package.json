@@ -1,0 +1,32 @@
+{
+  "name": "version-align",
+  "version": "1.0.0",
+  "description": "Align versions across package manifests",
+  "main": "src/versionalign.js",
+  "dependencies": {
+    "semver": "^5.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Addvilz/version-align.git"
+  },
+  "keywords": [
+    "version",
+    "semver",
+    "release",
+    "version-align"
+  ],
+  "author": "Matiss Treinis <mrtreinis@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Addvilz/version-align/issues"
+  },
+  "homepage": "https://github.com/Addvilz/version-align",
+  "bin": {
+    "valign": "./bin/valign.sh"
+  }
+}

@@ -1,5 +1,7 @@
 # Version align
 
+[![NPM](http://img.shields.io/npm/v/version-align.svg?style=flat-square)](https://www.npmjs.com/package/version-align)
+
 Align versions across package manifests.
 
 ### Installation
