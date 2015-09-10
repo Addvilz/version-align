@@ -26,9 +26,9 @@ Done, kthxbye!
 
 ### Supported manifests
 
-NPM: package.json
-Bower: bower.json
-Composer: composer.json
+- NPM: package.json
+- Bower: bower.json
+- Composer: composer.json
 
 ### License
 
