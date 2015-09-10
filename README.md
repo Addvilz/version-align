@@ -20,21 +20,22 @@ Align versions across package manifests determining the largest version from all
 
 In the directory where your package manifests are located, run following commandline:
 
-`valign`
+`valign [forced version]`
+
+There is only one argument you can pass - a forced version to be set instead of the one detected.
 
 You will see output something similar to this:
 
 ```
-Detected version 2.3.0-alpha for bower
-Detected version 2.2.0-alpha for npm
-Found largest version - 2.3.0-alpha, updating manifests...
-Skipping bower, same version
+Detected version 0.9.1 for npm
+Forcing largest version to 0.9.3 instead of 0.9.1 as requested
+Found largest manifest version - 0.9.3
+Detected invalid semver version in GIT - 1.0
+WARN: GIT has a version tag 1.2.0 that is larger than largest detected manifest version 0.9.3
 Done, kthxbye!
 ```
 
-### Todo
-
-- Allow forcing the version via CLI option like `valign 1.2.3`
+Version-Align will also check for git tags, try and guess the largest one and if there is a tag with a version largest than detected or forced version - you will be kindly notified and given a chance to reconsider your actions against world.
 
 ### Why
 
